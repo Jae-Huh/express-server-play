@@ -2,8 +2,16 @@
 var express = require('express')
 var path = require('path')
 var bodyParser = require('body-parser')
-var proverbs = require('./proverbs')
+var fs = require('fs');
+
 var app = express()
+var file = fs.readFileSync('./proverb.json', 'utf8')
+var proverbs = JSON.parse(file);
+
+function UpdateProverbJson(newProverb) {
+  proverbs.push(newProverb)
+  fs.writeFileSync('./proverb.json', JSON.stringify(proverbs))
+}
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -22,6 +30,15 @@ app.get('/jae', function(req, res) {
 
 app.get('/proverbs', function(req, res) {
   res.json(proverbs[Math.floor(Math.random() * proverbs.length)])
+})
+
+app.post('/addproverbs', function(req, res) {
+  UpdateProverbJson(req.body)
+  res.json(req.body)
+})
+
+app.get('/addproverbs', function(req, res) {
+  res.send("You must post data")
 })
 
 app.get('/query', function(req, res) {

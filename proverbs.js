@@ -1,9 +1,0 @@
-var proverbs = [
-  {source: "He tohe taau ki Kaiwere?",
-   translation :"Art thou striving to reach Kaiwere?\n\nMeaning: Provoke me a little longer and you will be hurt."},
-   {"source":"He ta kakaho e kitea, ko te ta o te ngakau ekore e kitea.","translation":"A knot, joint, or mark, on the cutting-grass reed is seen, but the mark or knot (heaving or thought) of the heart is not seen.\n\nI have often heard these last two proverbs used. They fall with bitter effect on the guilty person, often causing deep shames, as the New Zealanders abominated slander. The reference in both is to the kakaho reeds or flower-stalks, (cutting-grass = Arundo conspicua), formerly used for the inner walls and ceilings of a chief's house; these were sometimes partly coloured black in a kind of pattern of scroll-work, and when regularly laid side by side had a pleasing effect; any irregularity, however, in pattern or in laying, was speedily detected by the practised eye of the Maori; hence the proverb."},
-   {"source":"Rangitihi upoko i takaia ki te akatea.","translation":"Rangitihi's head was bound up with the white-flowering creeper (Metrosideros albiflora).\n\nThis hero of old, when his skull was split with his enemy's club, had it bound up with this creeping shrub, and, although his men had retreated, led them on again to battle, and gained the day.\n\nMeaning: The truly brave man never despairs."},
-   {"source":"Rangitihi upoko i takaia ki te akatea.","translation":"Rangitihi's head was bound up with the white-flowering creeper (Metrosideros albiflora).\n\nThis hero of old, when his skull was split with his enemy's club, had it bound up with this creeping shrub, and, although his men had retreated, led them on again to battle, and gained the day.\n\nMeaning: The truly brave man never despairs."}
-]
-
-module.exports = proverbs
